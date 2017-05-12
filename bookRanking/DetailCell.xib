@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11761" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Scx-07-XEn" customClass="DetailCell" customModule="bookRanking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="377"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Scx-07-XEn" id="MIQ-DJ-CMa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品説明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4g-ng-C3R">
+                        <rect key="frame" x="8" y="8" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OQp-DG-caj"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="yX7-Fd-1JA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWy-rc-lGE">
+                        <rect key="frame" x="8" y="37" width="359" height="339"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h4g-ng-C3R" firstAttribute="leading" secondItem="MIQ-DJ-CMa" secondAttribute="leadingMargin" id="6sB-3O-e8k"/>
+                    <constraint firstAttribute="trailing" secondItem="ZWy-rc-lGE" secondAttribute="trailing" constant="8" id="C9G-z6-MR3"/>
+                    <constraint firstAttribute="bottom" secondItem="ZWy-rc-lGE" secondAttribute="bottom" id="H8F-Md-FRc"/>
+                    <constraint firstItem="ZWy-rc-lGE" firstAttribute="top" secondItem="h4g-ng-C3R" secondAttribute="bottom" constant="8" id="KDZ-gR-JUk"/>
+                    <constraint firstItem="ZWy-rc-lGE" firstAttribute="leading" secondItem="MIQ-DJ-CMa" secondAttribute="leading" constant="8" id="brE-f2-Pqh"/>
+                    <constraint firstItem="h4g-ng-C3R" firstAttribute="top" secondItem="MIQ-DJ-CMa" secondAttribute="topMargin" id="z9J-nn-3nP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLavel" destination="ZWy-rc-lGE" id="iVB-ye-CaF"/>
+            </connections>
+            <point key="canvasLocation" x="-40.5" y="-32.5"/>
+        </tableViewCell>
+    </objects>
+</document>
